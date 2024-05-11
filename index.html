@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Formula 1</h1>
+  <div class="race-container">
+    <div class="track">
+      <img src="carros/carro1.png" class="car" id="schumacher">
+      <img src="carros/carro2.png" class="car" id="senna">
+      <img src="carros/carro33.png" class="car" id="hamilton">
+      <img src="carros/carro4.png" class="car" id="prost">
+    </div>
+    <div class="participants-container">
+      <div class="participants">
+        <h2>Participantes</h2>
+        <ul id="participants-list">
+          <li id="schumacher-pos">Schumacher</li>
+          <li id="senna-pos">Senna</li>
+          <li id="hamilton-pos">Hamilton</li>
+          <li id="prost-pos">Prost</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="saldo-torcedor">
+    Saldo do Torcedor: R$ 10.000
+  </div>
+
+  <div class="aposta-container">
+    <div class="aposta-background"></div> <!-- Adicionando uma div para o fundo desfocado -->
+    <div class="aposta-content">
+      <h2>Selecione um Corredor:</h2>
+      <select id="selecionar-corredor">
+        <option value="schumacher">Schumacher</option>
+        <option value="senna">Senna</option>
+        <option value="hamilton">Hamilton</option>
+        <option value="prost">Prost</option>
+      </select>
+      <input type="number" id="valor-aposta" placeholder="Valor da Aposta">
+      <button onclick="fazerAposta()">Fazer Aposta</button>
+    </div>
+  </div>
+
+  <button onclick="startRace()">Iniciar Corrida</button>
+  
+  <script src="script.js"></script>
+</body>
+</html>

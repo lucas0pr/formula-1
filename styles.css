@@ -1,0 +1,122 @@
+body {
+    text-align: center;
+    background-image: url('C:\\Users\\Lucas\\Downloads\\formula1\\fundo\\3.png');
+    background-size: cover; /* Para cobrir toda a área do corpo */
+    background-repeat: no-repeat; /* Para evitar a repetição da imagem */
+}
+
+.track {
+    width: 626px; /* Largura da pista */
+    height: 144px; /* Altura da pista */
+    margin: 0 auto;
+    border: 1px solid black;
+    position: relative;
+    background-image: url('pista/pista.png'); /* Substitua 'pista.png' pelo caminho para a sua imagem de pista */
+    background-size: cover;
+}
+
+.car {
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0; /* Adicionamos esta linha para posicionar os carros no início da pista */
+}
+
+#schumacher {
+    background: rgba(255, 255, 255, 0.329);
+}
+
+#senna {
+    top: 40px;
+}
+
+#hamilton {
+    top: 80px;
+}
+
+#prost {
+    top: 120px;
+}
+
+.participants-container {
+    position: fixed;
+    top: 10px;
+    right: 10px; /* Movemos para o canto direito */
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgba(58, 53, 53, 0.384);
+}
+
+.participants {
+    margin-top: 20px;
+}
+
+#participants-list {
+    list-style: none;
+    padding: 0;
+}
+
+#participants-list li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para o saldo do torcedor */
+.saldo-torcedor {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: rgba(58, 53, 53, 0.568);
+    padding: 10px;
+    border: 0px solid #000;
+    border-radius: 50px;
+}
+
+/* Estilos para a seção de apostas */
+.aposta-container {
+    border: 0px solid #000;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 80px;
+    width: fit-content;
+    position: relative; /* Adicionando posição relativa para o conteúdo absoluto */
+  }
+  
+  .aposta-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(58, 53, 53, 0.384); /* Cor do fundo com transparência */
+    border-radius: 10px; /* Mantendo o mesmo raio de borda */
+  }
+  
+  .aposta-content {
+    position: relative; /* Mantendo o conteúdo relativo para que fique na parte superior */
+    z-index: 1; /* Certificando-se de que o conteúdo fique acima do fundo */
+  }
+  
+  h1 {
+    color: #ffffff; /* Cor vermelho */
+}
+
+.participants h2 {
+    color: rgb(255, 255, 255); /* Altera a cor do texto do cabeçalho "Participantes" para branco */
+}
+
+#participants-list li {
+    color: rgb(255, 255, 255); /* Altera a cor do texto das listas de participantes para branco */
+}
+
+.saldo-torcedor {
+    color: rgb(255, 255, 255); /* Altera a cor do texto para branco */
+}
+
+.aposta-container{
+    color: rgb(255, 255, 255); /* Altera a cor do texto para branco */
+}
+
+button {
+    margin-top: 1px;
+}
